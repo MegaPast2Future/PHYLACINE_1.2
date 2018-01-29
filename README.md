@@ -1,4 +1,15 @@
+
+
+![PHYLACINE](/Docs/PHYLACINE_logo.png?raw=true)
+
 ## Welcome to GitHub Pages
+PHYLACINE 1.2 is a database that features:
+- Trait data (mass, diet, life habit)
+- Island endemicity
+- IUCN threat status
+- Phylogenetic trees
+- Current ranges
+- Counterfactural present natural ranges
 
 You can use the [editor on GitHub](https://github.com/MegaPast2Future/PHYLACINE_1.2/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
