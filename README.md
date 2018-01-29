@@ -1,6 +1,6 @@
 
 
-![PHYLACINE](/Docs/PHYLACINE_logo.png?raw=true)
+![PHYLACINE](/Docs/PHYLACINE_logo.png)
 
 ## Welcome to GitHub Pages
 PHYLACINE 1.2 is a database that features:
