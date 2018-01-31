@@ -1,48 +1,31 @@
 
 
-![PHYLACINE](/Docs/PHYLACINE_logo.png)
+![PHYLACINE](PHYLACINE_logo.png)
 
-## Welcome to GitHub Pages
-PHYLACINE 1.2 is a database that features:
+
+## Welcome to the home of PHYLACINE, a global database for late Quaternary mammals.
+
+PHYLACINE is a database that features:
 - Trait data (mass, diet, life habit)
 - Island endemicity
 - IUCN threat status
 - Phylogenetic trees
 - Current ranges
 - Counterfactural present natural ranges
+  
+  ...for all extant and recently extinct species.
 
-You can use the [editor on GitHub](https://github.com/MegaPast2Future/PHYLACINE_1.2/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To download the latest stable version of PHYLACINE (Version 1.2) or read our detailed metadata, vist our archive on DataDryad.
 
-### Markdown
+To cite PHYLACINE, please use the following:
+>Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.-C. (In Reviw). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+If you have an error to report or a suggestion to improve the database, please contact us through this form.
 
-```markdown
-Syntax highlighted code block
+If you would like to see the latest developement version of PHYLACINE, please visit our [GitHub repo](https://github.com/MegaPast2Future/PHYLACINE_1.2).
 
-# Header 1
-## Header 2
-### Header 3
+------
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MegaPast2Future/PHYLACINE_1.2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+PHYLACINE 1.2 is a product of MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
