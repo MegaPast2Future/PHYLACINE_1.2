@@ -14,7 +14,7 @@ PHYLACINE is a database that features:
   ...for all extant and recently extinct species.
 
 
-To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on DataDryad.
+To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on DataDryad (This link will go live once the manuscript has been published).
 
 To cite PHYLACINE, please use the following:
 >Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.-C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
