@@ -257,3 +257,8 @@ ggsave("Australian_megafauna.pdf", plot = p, units = "cm", width = 28, height = 
 You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species.
 
 ![Australia](docs/Australian_megafauna.png)
+
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
