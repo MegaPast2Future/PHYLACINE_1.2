@@ -42,9 +42,6 @@ Now install all the packages needed to run this vignette (pacman helps out with 
 
 ``` r
 install.packages("pacman", repos="https://cloud.r-project.org")
-#> 
-#> The downloaded binary packages are in
-#>  /var/folders/9n/w0v2wh193rddhc5htth9hfb00000gn/T//RtmprOrTjf/downloaded_packages
 pacman::p_load(ggplot2,
                dplyr,
                stringr,
