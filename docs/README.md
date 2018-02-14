@@ -11,7 +11,7 @@ PHYLACINE is a database that features:
 - Current ranges
 - Counterfactual present natural ranges
   
-  ...for all extant and recently extinct species.
+  ...for all extant and recently extinct mammal species.
 
 
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on DataDryad **(This link will go live once the manuscript has been published)**.

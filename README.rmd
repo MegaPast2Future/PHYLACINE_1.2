@@ -1,44 +1,62 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd in Docs. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "docs/"
+)
+```
+
+
 ![PHYLACINE](docs/PHYLACINE_logo.png)
 
-Welcome to the repo for PHYLACINE, a global database for late Quaternary mammals.
-=================================================================================
+# Welcome to the repo for PHYLACINE, a global database for late Quaternary mammals.
 
-PHYLACINE is a database that features: - Trait data (mass, diet, life habit) - Island endemicity - IUCN threat status - Phylogenetic trees - Current ranges - Counterfactual present natural ranges
 
-...for all extant and recently extinct mammal species (~130,000 years ago until today).
+PHYLACINE is a database that features:
+- Trait data (mass, diet, life habit)
+- Island endemicity
+- IUCN threat status
+- Phylogenetic trees
+- Current ranges
+- Counterfactual present natural ranges
+  
+  ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
-To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
-To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data) **(This link will go live once the manuscript has been published)**.
+To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad][dryad-data] **(This link will go live once the manuscript has been published)**.
+
+To play around with the latest development version of PHYLACINE, fork our repo or click [here][github-data] **(This link will go live once the manuscript has been published)**.
 
 To cite PHYLACINE, please use the following:
 
 > Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.-C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
-If you have an error to report or a suggestion to improve the database, please contact us through this [form](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link) or start a pull request.
+If you have an error to report or a suggestion to improve the database, please contact us through this [form][error-form] or start a pull request.
 
-------------------------------------------------------------------------
+
+------
+
 
 PHYLACINE 1.2 is a product of MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
 
-------------------------------------------------------------------------
 
-Vignette
---------
+------
+
+## Vignette
 
 Try out this small vignette to get sense for the kind of data in PHYLACINE and the things you can do with it. You'll produce maps and phylogenetic trees of Australian megafauna.
 
 First, you'll need to download the PHYLACINE database (see above). Then make sure your working directory in R is set to the directory enclosing the "Data" folder
 
 Now install all the packages needed to run this vignette (pacman helps out with this as we need so many packages).
-
-``` r
+```{r}
 install.packages("pacman", repos="https://cloud.r-project.org")
-#> 
-#> The downloaded binary packages are in
-#>  /var/folders/9n/w0v2wh193rddhc5htth9hfb00000gn/T//RtmpISOoRm/downloaded_packages
 pacman::p_load(ggplot2,
                dplyr,
                stringr,
@@ -50,20 +68,21 @@ pacman::p_load(ggplot2,
                maptools,
                ape,
                ggtree)
+
 ```
 
-Load up the phylogeny (this takes about 30 seconds). To make this example easy to run we will only use 30 out of the 1000 available trees. Remember to always use a distribution of trees like this to capture phylogenetic uncertainty.
 
-``` r
+Load up the phylogeny (this takes about 30 seconds). To make this example easy to run we will only use 30 out of the 1000 available trees. Remember to always use a distribution of trees like this to capture phylogenetic uncertainty.
+```{r}
 forest <- read.nexus("Data/Phylogenies/Complete_phylogeny.nex")
 names(forest) <- NULL
 set.seed(42)
 forest <- forest[sample(1:1000, 30)]
 ```
 
-Now load up the rest of the data.
 
-``` r
+Now load up the rest of the data.
+```{r}
 # Load world map and subset to Australia
 data(wrld_simpl)
 australia <- wrld_simpl[wrld_simpl$NAME == "Australia", ]
@@ -74,62 +93,6 @@ mam <- read.csv("Data/Traits/Trait_data.csv", fileEncoding = "UTF-8", stringsAsF
 # Set factor levels for IUCN status. "EP" is a new status we added to designate species that went extinct in prehistory like Diprotodon  
 mam$IUCN.Status.1.2 <- factor(mam$IUCN.Status.1.2, levels=c("EP", "EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD"))
 summary(mam)
-#>  Binomial.1.2        Order.1.2          Family.1.2       
-#>  Length:5831        Length:5831        Length:5831       
-#>  Class :character   Class :character   Class :character  
-#>  Mode  :character   Mode  :character   Mode  :character  
-#>                                                          
-#>                                                          
-#>                                                          
-#>                                                          
-#>   Genus.1.2         Species.1.2         Terrestrial         Marine       
-#>  Length:5831        Length:5831        Min.   :0.0000   Min.   :0.00000  
-#>  Class :character   Class :character   1st Qu.:1.0000   1st Qu.:0.00000  
-#>  Mode  :character   Mode  :character   Median :1.0000   Median :0.00000  
-#>                                        Mean   :0.7846   Mean   :0.02332  
-#>                                        3rd Qu.:1.0000   3rd Qu.:0.00000  
-#>                                        Max.   :1.0000   Max.   :1.00000  
-#>                                                                          
-#>    Freshwater          Aerial       Life.Habit.Method  Life.Habit.Source 
-#>  Min.   :0.00000   Min.   :0.0000   Length:5831        Length:5831       
-#>  1st Qu.:0.00000   1st Qu.:0.0000   Class :character   Class :character  
-#>  Median :0.00000   Median :0.0000   Mode  :character   Mode  :character  
-#>  Mean   :0.02675   Mean   :0.1993                                        
-#>  3rd Qu.:0.00000   3rd Qu.:0.0000                                        
-#>  Max.   :1.00000   Max.   :1.0000                                        
-#>                                                                          
-#>      Mass.g         Mass.Method        Mass.Source       
-#>  Min.   :2.00e+00   Length:5831        Length:5831       
-#>  1st Qu.:2.10e+01   Class :character   Class :character  
-#>  Median :8.40e+01   Mode  :character   Mode  :character  
-#>  Mean   :1.59e+05                                        
-#>  3rd Qu.:9.92e+02                                        
-#>  Max.   :1.90e+08                                        
-#>                                                          
-#>  Mass.Comparison    Mass.Comparison.Source Island.Endemicity 
-#>  Length:5831        Length:5831            Length:5831       
-#>  Class :character   Class :character       Class :character  
-#>  Mode  :character   Mode  :character       Mode  :character  
-#>                                                              
-#>                                                              
-#>                                                              
-#>                                                              
-#>  IUCN.Status.1.2 Added.IUCN.Status.1.2   Diet.Plant     Diet.Vertebrate  
-#>  LC     :3157    Length:5831           Min.   :  0.00   Min.   :  0.000  
-#>  DD     : 777    Class :character      1st Qu.:  0.00   1st Qu.:  0.000  
-#>  VU     : 525    Mode  :character      Median : 80.00   Median :  0.000  
-#>  EN     : 464                          Mean   : 56.43   Mean   :  9.151  
-#>  NT     : 350                          3rd Qu.:100.00   3rd Qu.:  5.000  
-#>  EP     : 270                          Max.   :100.00   Max.   :100.000  
-#>  (Other): 288                                                            
-#>  Diet.Invertebrate Diet.Method        Diet.Source       
-#>  Min.   :  0.00    Length:5831        Length:5831       
-#>  1st Qu.:  0.00    Class :character   Class :character  
-#>  Median : 20.00    Mode  :character   Mode  :character  
-#>  Mean   : 34.42                                         
-#>  3rd Qu.: 70.00                                         
-#>  Max.   :100.00                                         
-#> 
 
 # Subset to species that are in Australian marsupial orders, over 20 kg, and 100 % herbivorous
 marsupial.orders <- c("Dasyuromorphia", "Peramelemorphia",
@@ -139,9 +102,9 @@ marsupials <- marsupials[marsupials$Mass.g > 20000, ]
 marsupials <- marsupials[marsupials$Diet.Plant == 100, ]
 ```
 
-Current maps show where species live today. Present natural maps represent a counterfactual scenario that shows where species would live without Anthropogenic pressures. These ranges include extinct species.
 
-``` r
+Current maps show where species live today. Present natural maps represent a counterfactual scenario that shows where species would live without Anthropogenic pressures. These ranges include extinct species.
+```{r}
 # Load maps of these marsupial species
 maps.current <- paste0("Data/Ranges/Current/", marsupials$Binomial.1.2, ".tif")
 r.current <- stack(maps.current)
@@ -193,9 +156,9 @@ div <- stack(current.div, pres.nat.div)
 div[] <- ifelse(div[] == 0, NA, div[])
 ```
 
-Set up the ranges for plotting.
 
-``` r
+Set up the ranges for plotting.
+```{r}
 # Plot the two maps on top of each other, with a nice legend
 p.map <- 
   levelplot(div,
@@ -220,9 +183,9 @@ p.map <-
 p.map <- p.map + layer(sp.polygons(australia, col = "darkgrey"))
 ```
 
-Trim the phylogenies down to just the Australian megafauna we are looking at and prepare them for plotting. We plot a random tree as the focal tree and then 29 other trees behind it to show uncertainty.
 
-``` r
+Trim the phylogenies down to just the Australian megafauna we are looking at and prepare them for plotting. We plot a random tree as the focal tree and then 29 other trees behind it to show uncertainty.
+```{r}
 # Trim tree down to the species list of Australian marsupials created earlier
 pruned.forest <- lapply(forest, 
                           function(x) {
@@ -283,9 +246,9 @@ p.tree <- p.tree +
                         trans = "log10")
 ```
 
-Finally, put everything together into one big plot and save it.
 
-``` r
+Finally, put everything together into one big plot and save it. 
+```{r}
 # Plot it all
 p <- arrangeGrob(
   p.map, p.tree,
@@ -298,4 +261,11 @@ p <- arrangeGrob(
 ggsave("Australian_megafauna.pdf", plot = p, units = "cm", width = 28, height = 16)
 ```
 
-You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species. ![Australia](docs/Australian_megafauna.png)
+
+You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species.
+![Australia](docs/Australian_megafauna.png)
+
+
+[error-form]: https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link
+[dryad-data]: www.datadryad.org
+[github-data]: https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data
