@@ -18,6 +18,10 @@ PHYLACINE is a database that features:
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on DataDryad **(This link will go live once the manuscript has been published)**.
 
 
+### Try out the data
+We have some example [code](../README.md#vignette) at our GitHub site to help you easily create a map and phylogeny of Australian megafauna. 
+
+
 ### Cite the data
 To cite PHYLACINE, please use the following:
 >Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.-C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
