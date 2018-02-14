@@ -15,15 +15,25 @@ PHYLACINE is a database that features:
 
     ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
+
+### Download the data
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
 To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data) **(This link will go live once the manuscript has been published)**.
 
+
+### Cite the data
 To cite PHYLACINE, please use the following:
 
-> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.-C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
+
+### Report errors
 If you have an error to report or a suggestion to improve the database, please contact us through this [form](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link) or start a pull request.
+
+### Check out our Most Wanted List
+You can also help us out by taking a look at our [Most Wanted List](docs/Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
+
 
 ------------------------------------------------------------------------
 
