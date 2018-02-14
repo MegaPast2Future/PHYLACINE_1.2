@@ -1,11 +1,11 @@
 
-<!-- README.md is generated from README.Rmd in Docs. Please edit that file -->
+<!-- README.md is generated from README.Rmd in docs. Please edit that file -->
 ![PHYLACINE](docs/PHYLACINE_logo.png)
 
 Welcome to the repo for PHYLACINE, a global database for late Quaternary mammals.
 =================================================================================
 
-PHYLACINE is a database that features: - Trait data (mass, diet, life habit) - Island endemicity - IUCN threat status - Phylogenetic trees - Current ranges - Counterfactual present natural ranges
+PHYLACINE is a database that features: \* Trait data (mass, diet, life habit) \* Island endemicity \* IUCN threat status \* Phylogenetic trees \* Current ranges \* Counterfactual present natural ranges
 
 ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
@@ -38,7 +38,7 @@ Now install all the packages needed to run this vignette (pacman helps out with 
 install.packages("pacman", repos="https://cloud.r-project.org")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/9n/w0v2wh193rddhc5htth9hfb00000gn/T//RtmpISOoRm/downloaded_packages
+#>  /var/folders/9n/w0v2wh193rddhc5htth9hfb00000gn/T//RtmprOrTjf/downloaded_packages
 pacman::p_load(ggplot2,
                dplyr,
                stringr,
@@ -49,7 +49,7 @@ pacman::p_load(ggplot2,
                rgdal,
                maptools,
                ape,
-               ggtree)
+               ggtree, update = F)
 ```
 
 Load up the phylogeny (this takes about 30 seconds). To make this example easy to run we will only use 30 out of the 1000 available trees. Remember to always use a distribution of trees like this to capture phylogenetic uncertainty.
@@ -73,63 +73,6 @@ mam <- read.csv("Data/Traits/Trait_data.csv", fileEncoding = "UTF-8", stringsAsF
 
 # Set factor levels for IUCN status. "EP" is a new status we added to designate species that went extinct in prehistory like Diprotodon  
 mam$IUCN.Status.1.2 <- factor(mam$IUCN.Status.1.2, levels=c("EP", "EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD"))
-summary(mam)
-#>  Binomial.1.2        Order.1.2          Family.1.2       
-#>  Length:5831        Length:5831        Length:5831       
-#>  Class :character   Class :character   Class :character  
-#>  Mode  :character   Mode  :character   Mode  :character  
-#>                                                          
-#>                                                          
-#>                                                          
-#>                                                          
-#>   Genus.1.2         Species.1.2         Terrestrial         Marine       
-#>  Length:5831        Length:5831        Min.   :0.0000   Min.   :0.00000  
-#>  Class :character   Class :character   1st Qu.:1.0000   1st Qu.:0.00000  
-#>  Mode  :character   Mode  :character   Median :1.0000   Median :0.00000  
-#>                                        Mean   :0.7846   Mean   :0.02332  
-#>                                        3rd Qu.:1.0000   3rd Qu.:0.00000  
-#>                                        Max.   :1.0000   Max.   :1.00000  
-#>                                                                          
-#>    Freshwater          Aerial       Life.Habit.Method  Life.Habit.Source 
-#>  Min.   :0.00000   Min.   :0.0000   Length:5831        Length:5831       
-#>  1st Qu.:0.00000   1st Qu.:0.0000   Class :character   Class :character  
-#>  Median :0.00000   Median :0.0000   Mode  :character   Mode  :character  
-#>  Mean   :0.02675   Mean   :0.1993                                        
-#>  3rd Qu.:0.00000   3rd Qu.:0.0000                                        
-#>  Max.   :1.00000   Max.   :1.0000                                        
-#>                                                                          
-#>      Mass.g         Mass.Method        Mass.Source       
-#>  Min.   :2.00e+00   Length:5831        Length:5831       
-#>  1st Qu.:2.10e+01   Class :character   Class :character  
-#>  Median :8.40e+01   Mode  :character   Mode  :character  
-#>  Mean   :1.59e+05                                        
-#>  3rd Qu.:9.92e+02                                        
-#>  Max.   :1.90e+08                                        
-#>                                                          
-#>  Mass.Comparison    Mass.Comparison.Source Island.Endemicity 
-#>  Length:5831        Length:5831            Length:5831       
-#>  Class :character   Class :character       Class :character  
-#>  Mode  :character   Mode  :character       Mode  :character  
-#>                                                              
-#>                                                              
-#>                                                              
-#>                                                              
-#>  IUCN.Status.1.2 Added.IUCN.Status.1.2   Diet.Plant     Diet.Vertebrate  
-#>  LC     :3157    Length:5831           Min.   :  0.00   Min.   :  0.000  
-#>  DD     : 777    Class :character      1st Qu.:  0.00   1st Qu.:  0.000  
-#>  VU     : 525    Mode  :character      Median : 80.00   Median :  0.000  
-#>  EN     : 464                          Mean   : 56.43   Mean   :  9.151  
-#>  NT     : 350                          3rd Qu.:100.00   3rd Qu.:  5.000  
-#>  EP     : 270                          Max.   :100.00   Max.   :100.000  
-#>  (Other): 288                                                            
-#>  Diet.Invertebrate Diet.Method        Diet.Source       
-#>  Min.   :  0.00    Length:5831        Length:5831       
-#>  1st Qu.:  0.00    Class :character   Class :character  
-#>  Median : 20.00    Mode  :character   Mode  :character  
-#>  Mean   : 34.42                                         
-#>  3rd Qu.: 70.00                                         
-#>  Max.   :100.00                                         
-#> 
 
 # Subset to species that are in Australian marsupial orders, over 20 kg, and 100 % herbivorous
 marsupial.orders <- c("Dasyuromorphia", "Peramelemorphia",
@@ -298,4 +241,6 @@ p <- arrangeGrob(
 ggsave("Australian_megafauna.pdf", plot = p, units = "cm", width = 28, height = 16)
 ```
 
-You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species. ![Australia](docs/Australian_megafauna.png)
+You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species.
+
+![Australia](docs/Australian_megafauna.png)

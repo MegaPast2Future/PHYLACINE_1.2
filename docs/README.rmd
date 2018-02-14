@@ -2,14 +2,17 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd in Docs. Please edit that file -->
+<!-- README.md is generated from README.Rmd in docs. Please edit that file -->
 
 ```{r, echo = FALSE}
+knitr::opts_knit$set(root.dir=normalizePath("../"))
+
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "docs/"
-)
+  fig.path = "../docs/"
+  )
+
 ```
 
 
@@ -19,12 +22,12 @@ knitr::opts_chunk$set(
 
 
 PHYLACINE is a database that features:
-- Trait data (mass, diet, life habit)
-- Island endemicity
-- IUCN threat status
-- Phylogenetic trees
-- Current ranges
-- Counterfactual present natural ranges
+* Trait data (mass, diet, life habit)
+* Island endemicity
+* IUCN threat status
+* Phylogenetic trees
+* Current ranges
+* Counterfactual present natural ranges
   
   ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
@@ -55,6 +58,7 @@ Try out this small vignette to get sense for the kind of data in PHYLACINE and t
 First, you'll need to download the PHYLACINE database (see above). Then make sure your working directory in R is set to the directory enclosing the "Data" folder
 
 Now install all the packages needed to run this vignette (pacman helps out with this as we need so many packages).
+
 ```{r}
 install.packages("pacman", repos="https://cloud.r-project.org")
 pacman::p_load(ggplot2,
@@ -67,12 +71,14 @@ pacman::p_load(ggplot2,
                rgdal,
                maptools,
                ape,
-               ggtree)
+               ggtree, update = F)
 
 ```
 
 
+
 Load up the phylogeny (this takes about 30 seconds). To make this example easy to run we will only use 30 out of the 1000 available trees. Remember to always use a distribution of trees like this to capture phylogenetic uncertainty.
+
 ```{r}
 forest <- read.nexus("Data/Phylogenies/Complete_phylogeny.nex")
 names(forest) <- NULL
@@ -81,7 +87,9 @@ forest <- forest[sample(1:1000, 30)]
 ```
 
 
+
 Now load up the rest of the data.
+
 ```{r}
 # Load world map and subset to Australia
 data(wrld_simpl)
@@ -92,7 +100,6 @@ mam <- read.csv("Data/Traits/Trait_data.csv", fileEncoding = "UTF-8", stringsAsF
 
 # Set factor levels for IUCN status. "EP" is a new status we added to designate species that went extinct in prehistory like Diprotodon  
 mam$IUCN.Status.1.2 <- factor(mam$IUCN.Status.1.2, levels=c("EP", "EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD"))
-summary(mam)
 
 # Subset to species that are in Australian marsupial orders, over 20 kg, and 100 % herbivorous
 marsupial.orders <- c("Dasyuromorphia", "Peramelemorphia",
@@ -103,7 +110,9 @@ marsupials <- marsupials[marsupials$Diet.Plant == 100, ]
 ```
 
 
+
 Current maps show where species live today. Present natural maps represent a counterfactual scenario that shows where species would live without Anthropogenic pressures. These ranges include extinct species.
+
 ```{r}
 # Load maps of these marsupial species
 maps.current <- paste0("Data/Ranges/Current/", marsupials$Binomial.1.2, ".tif")
@@ -157,7 +166,9 @@ div[] <- ifelse(div[] == 0, NA, div[])
 ```
 
 
+
 Set up the ranges for plotting.
+
 ```{r}
 # Plot the two maps on top of each other, with a nice legend
 p.map <- 
@@ -184,7 +195,9 @@ p.map <- p.map + layer(sp.polygons(australia, col = "darkgrey"))
 ```
 
 
+
 Trim the phylogenies down to just the Australian megafauna we are looking at and prepare them for plotting. We plot a random tree as the focal tree and then 29 other trees behind it to show uncertainty.
+
 ```{r}
 # Trim tree down to the species list of Australian marsupials created earlier
 pruned.forest <- lapply(forest, 
@@ -247,7 +260,9 @@ p.tree <- p.tree +
 ```
 
 
+
 Finally, put everything together into one big plot and save it. 
+
 ```{r}
 # Plot it all
 p <- arrangeGrob(
@@ -263,6 +278,9 @@ ggsave("Australian_megafauna.pdf", plot = p, units = "cm", width = 28, height = 
 
 
 You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species.
+
+
+
 ![Australia](docs/Australian_megafauna.png)
 
 
