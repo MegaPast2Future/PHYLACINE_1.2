@@ -13,7 +13,7 @@ PHYLACINE is a database that features:
 * Current ranges 
 * Counterfactual present natural ranges
 
-...for all extant and recently extinct mammal species (~130,000 years ago until today).
+          ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
