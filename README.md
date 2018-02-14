@@ -202,7 +202,7 @@ pruned.forest <- fortify(pruned.forest)
 # Reverse ages to show time BP
 pruned.forest$x <- pruned.forest$x - max(pruned.forest$x)
 
-# Plot forest of uncertainty (based on only 30/1000 trees for speed)
+# Plot forest of uncertainty (based on only 30 out of 1000 trees for speed)
 p.tree <- ggplot(pruned.forest) +
   geom_tree(col = "lightblue", alpha = .3, multiPhylo = TRUE) +
   theme_tree2() +
