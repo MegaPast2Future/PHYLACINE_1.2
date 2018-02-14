@@ -5,7 +5,13 @@
 Welcome to the repo for PHYLACINE, a global database for late Quaternary mammals.
 =================================================================================
 
-PHYLACINE is a database that features: \* Trait data (mass, diet, life habit) \* Island endemicity \* IUCN threat status \* Phylogenetic trees \* Current ranges \* Counterfactual present natural ranges
+PHYLACINE is a database that features: 
+* Trait data (mass, diet, life habit) 
+* Island endemicity 
+* IUCN threat status 
+* Phylogenetic trees 
+* Current ranges 
+* Counterfactual present natural ranges
 
 ...for all extant and recently extinct mammal species (~130,000 years ago until today).
 
