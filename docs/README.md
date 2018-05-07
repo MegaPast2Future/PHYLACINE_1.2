@@ -15,7 +15,7 @@ PHYLACINE is a database that features:
 
 
 ### Download the data
-To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on DataDryad **(This link will go live once the manuscript has been published)**.
+To download the latest stable version of PHYLACINE (Version 1.2.0) or to read our detailed metadata, vist our archive on DataDryad **(This link will go live once the manuscript has been published)**.
 
 
 ### Try out the data
@@ -43,4 +43,4 @@ If you would like to see the latest development version of PHYLACINE or start a 
 
 PHYLACINE 1.2 is a product of MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />This work is licensed under a <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0 License</a>.
