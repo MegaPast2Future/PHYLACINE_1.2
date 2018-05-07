@@ -27,6 +27,8 @@ To cite PHYLACINE, please use the following:
 
 > Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
+If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](docs/PHYLACINE_logo_large.png) and a [black and white version](docs/PHYLACINE_logo_large_bw.png) that you may use.
+
 
 ### Report errors
 If you have an error to report or a suggestion to improve the database, please contact us through this [form](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link) or start a pull request.
@@ -261,4 +263,4 @@ You should end up with something like this. Current diversity shows how many meg
 
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />  This work is licensed under a <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0 License</a>.
