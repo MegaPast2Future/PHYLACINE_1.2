@@ -24,7 +24,7 @@ We have some example [code](../README.md#vignette) at our GitHub site to help yo
 
 ### Cite the data
 To cite PHYLACINE, please use the following:
->Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+>Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Press). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](PHYLACINE_logo_large.png) and a [black and white version](PHYLACINE_logo_large_bw.png) that you may use.
 
