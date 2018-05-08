@@ -19,13 +19,13 @@ PHYLACINE is a database that features:
 ### Download the data
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
-To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data) **(This link will go live once the manuscript has been published)**.
+To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data).
 
 
 ### Cite the data
 To cite PHYLACINE, please use the following:
 
-> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Press). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](docs/PHYLACINE_logo_large.png) and a [black and white version](docs/PHYLACINE_logo_large_bw.png) that you may use.
 
@@ -36,6 +36,24 @@ If you have an error to report or a suggestion to improve the database, please c
 ### Check out our Most Wanted List
 You can also help us out by taking a look at our [Most Wanted List](docs/Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
 
+### Road map
+Here are some changes we are planning to make in future versions of PHYLACINE:
+
+#### Species to remove:
+* _Navahoceros fricki_
+* _Sangamona fugitiva_
+* _Hexaprotodon sivalensis_
+* _Sus brachgnathus_
+* _Stegodon trigonocephalus_
+* _Bubalus palaeokerabau_
+
+#### Species to add:
+* _Stegodon sumbaensis_
+* _Milimonggamys juliae_
+* _Raksasamys tikusbesar_
+
+#### Changes in taxonomy:
+* _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
 
 ------------------------------------------------------------------------
 
@@ -48,7 +66,7 @@ Vignette
 
 Try out this small vignette to get sense for the kind of data in PHYLACINE and the things you can do with it. You'll produce maps and phylogenetic trees of Australian megafauna.
 
-First, you'll need to download the PHYLACINE database (see above). Then make sure your working directory in R is set to the directory enclosing the "Data" folder
+First, you'll need to download the PHYLACINE database (see above). Then, make sure your working directory in R is set to the directory enclosing the "Data" folder (If you downloaded the stable version of PHYLACINE from DataDryad, you'll have a slightly different folder structure, so just make sure your edit the relative file paths in the code below to reflect where your own file structure).
 
 Now install all the packages needed to run this vignette (pacman helps out with this as we need so many packages).
 
@@ -89,12 +107,12 @@ mam <- read.csv("Data/Traits/Trait_data.csv", fileEncoding = "UTF-8", stringsAsF
 # Set factor levels for IUCN status. "EP" is a new status we added to designate species that went extinct in prehistory like Diprotodon  
 mam$IUCN.Status.1.2 <- factor(mam$IUCN.Status.1.2, levels=c("EP", "EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD"))
 
-# Subset to species that are in Australian marsupial orders, over 20 kg, and 100 % herbivorous
+# Subset to species that are in Australian marsupial orders, over 20 kg, and over 90 % herbivorous
 marsupial.orders <- c("Dasyuromorphia", "Peramelemorphia",
                       "Notoryctemorphia", "Diprotodontia")
 marsupials <- mam[mam$Order.1.2 %in% marsupial.orders, ]
 marsupials <- marsupials[marsupials$Mass.g > 20000, ]
-marsupials <- marsupials[marsupials$Diet.Plant == 100, ]
+marsupials <- marsupials[marsupials$Diet.Plant >= 90, ]
 ```
 
 Current maps show where species live today. Present natural maps represent a counterfactual scenario that shows where species would live without Anthropogenic pressures. These ranges include extinct species.
@@ -109,10 +127,11 @@ r.pres.nat <- stack(maps.pres.nat)
 # Project Australia map to the range map projection
 australia <- spTransform(australia, crs(r.current))
 
-# Crop range maps to just the extent of Australia
+# Crop range maps to just the extent of Australia for a cleaner plot
 ext <- extent(australia)
-ext[2] <- 15000000 # Reduce Eastern extent to cut some tiny islands away
-ext[3] <- -5200000 # Reduce Southern to cut some tiny islands away
+ext[2] <- 15000000 # Reduce eastern extent
+ext[3] <- -5200000 # Reduce southern extent
+ext[4] <- -1370000 # Reduce northern extent
 r.current <- crop(r.current, ext)
 r.pres.nat <- crop(r.pres.nat, ext)
 
@@ -226,12 +245,12 @@ p.tree <- ggplot(pruned.forest) +
 p.tree <- p.tree + 
   geom_tree(data = tree, aes(x, y, lty = group), size = .8) +
   geom_tiplab(data = tree, aes(label = paste0('italic(', str_replace(label, "_", "~"), ')')),
-                  offset = .8, parse = T) +
+              offset = .8, parse = T, size= 3.5) +
   scale_linetype_manual(values = c("dashed", "solid"), guide = F) +
   geom_tippoint(data = tree, aes(x, y, color = IUCN.Status.1.2, size = Mass.g/1000)) +
   scale_color_manual("IUCN Status",
                      values = status.colors) +
-  guides(color = guide_legend(override.aes = list(size=4))) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
   theme(legend.position = "bottom",
         legend.box = "horizontal",
         panel.background = element_blank(),
