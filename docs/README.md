@@ -38,7 +38,7 @@ You can also help us out by taking a look at our [Most Wanted List](Most_wanted_
 
 
 ### Help develop the next version of PHYLACINE
-If you would like to see the latest development version of PHYLACINE or start a pull request, please visit our [GitHub repo](https://github.com/MegaPast2Future/PHYLACINE_1.2) **(This link will go live once the manuscript has been published)**.
+If you would like to see the latest development version of PHYLACINE or start a pull request, please visit our [GitHub repo](https://github.com/MegaPast2Future/PHYLACINE_1.2).
 
 ------
 
