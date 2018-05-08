@@ -19,13 +19,13 @@ PHYLACINE is a database that features:
 ### Download the data
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
-To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data) **(This link will go live once the manuscript has been published)**.
+To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data).
 
 
 ### Cite the data
 To cite PHYLACINE, please use the following:
 
-> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Review). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Press). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](docs/PHYLACINE_logo_large.png) and a [black and white version](docs/PHYLACINE_logo_large_bw.png) that you may use.
 
@@ -36,6 +36,24 @@ If you have an error to report or a suggestion to improve the database, please c
 ### Check out our Most Wanted List
 You can also help us out by taking a look at our [Most Wanted List](docs/Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
 
+### Road map
+Here are some changes we are planning to make in future versions of PHYLACINE:
+
+#### Species to remove:
+* _Navahoceros fricki_
+* _Sangamona fugitiva_
+* _Hexaprotodon sivalensis_
+* _Sus brachgnathus_
+* _Stegodon trigonocephalus_
+* _Bubalus palaeokerabau_
+
+#### Species to add:
+* _Stegodon sumbaensis_
+* _Milimonggamys juliae_
+* _Raksasamys tikusbesar_
+
+#### Changes in taxonomy:
+* _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
 
 ------------------------------------------------------------------------
 
