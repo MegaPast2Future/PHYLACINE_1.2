@@ -19,7 +19,7 @@ To download the latest stable version of PHYLACINE (Version 1.2.0) or to read ou
 
 
 ### Try out the data
-We have some example [code](../README.md#vignette) at our GitHub site to help you easily create a map and phylogeny of Australian megafauna. 
+We have some example [code](https://github.com/MegaPast2Future/PHYLACINE_1.2#vignette) at our GitHub site to help you easily create a map and phylogeny of Australian megafauna. 
 
 
 ### Cite the data
