@@ -66,9 +66,9 @@ Vignette
 
 Try out this small vignette to get sense for the kind of data in PHYLACINE and the things you can do with it. You'll produce maps and phylogenetic trees of Australian megafauna.
 
-First, you'll need to download the PHYLACINE database (see above). Then, make sure your working directory in R is set to the directory enclosing the "Data" folder (If you downloaded the stable version of PHYLACINE from DataDryad, you'll have a slightly different folder structure, so just make sure your edit the relative file paths in the code below to reflect where your own file structure).
+First, you'll need to download the PHYLACINE database (see above). Then, make sure your working directory in R is set to the directory enclosing the "Data" folder (If you downloaded the stable version of PHYLACINE from DataDryad, you'll have a slightly different folder structure, so just make sure you edit the relative file paths in the code below to reflect where your own files are).
 
-Now install all the packages needed to run this vignette (pacman helps out with this as we need so many packages).
+Now, install all the packages needed to run this vignette (pacman helps out with this as we need so many packages).
 
 ``` r
 install.packages("pacman", repos="https://cloud.r-project.org")
