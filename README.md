@@ -1,6 +1,7 @@
 
 <!-- README.md is generated from README.Rmd in docs. Please edit that file -->
 ![PHYLACINE](docs/PHYLACINE_logo.png)
+<br><br>
 
 Welcome to the repo for PHYLACINE, a global database for late Quaternary mammals.
 =================================================================================
@@ -14,13 +15,15 @@ PHYLACINE is a database that features:
 * Counterfactual present natural ranges
 
     ...for all extant and recently extinct mammal species (~130,000 years ago until today).
-
+<br><br>
+<br><br>
 
 ### Download the data
 To download the latest stable version of PHYLACINE (Version 1.2) or to read our detailed metadata, vist our archive on [DataDryad](www.datadryad.org) **(This link will go live once the manuscript has been published)**.
 
 To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data).
-
+<br><br>
+<br><br>
 
 ### Cite the data
 To cite PHYLACINE, please use the following:
@@ -28,15 +31,20 @@ To cite PHYLACINE, please use the following:
 > Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (In Press). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](docs/PHYLACINE_logo_large.png) and a [black and white version](docs/PHYLACINE_logo_large_bw.png) that you may use.
-
+<br><br>
+<br><br>
 
 ### Report errors
 If you have an error to report or a suggestion to improve the database, please contact us through this [form](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link) or start a pull request.
+<br><br>
+<br><br>
 
 ### Check out our Most Wanted List
 You can also help us out by taking a look at our [Most Wanted List](docs/Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
+<br><br>
+<br><br>
 
-### Road map
+### View our road map
 Here are some changes we are planning to make in future versions of PHYLACINE:
 
 #### Species to remove:
@@ -54,12 +62,16 @@ Here are some changes we are planning to make in future versions of PHYLACINE:
 
 #### Changes in taxonomy:
 * _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
+<br><br>
+<br><br>
 
 ------------------------------------------------------------------------
 
 PHYLACINE 1.2 is a product of MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
 
 ------------------------------------------------------------------------
+<br><br>
+<br><br>
 
 Vignette
 --------
@@ -278,7 +290,9 @@ ggsave("Australian_megafauna.pdf", plot = p, units = "cm", width = 28, height = 
 You should end up with something like this. Current diversity shows how many megafauna live in Australia now but Present natural diversity shows where extinct megafauna could live today. The dotted lines on the tree mark out branches that we have lost to extinction. You can see they are connected to the largest species.
 
 ![Australia](docs/Australian_megafauna.png)
-
+<br><br>
+<br><br>
+<br><br>
 
 
 
