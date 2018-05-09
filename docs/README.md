@@ -34,7 +34,7 @@ If you have an error to report or a suggestion to improve the database, please c
 
 
 ### Check out our Most Wanted List
-You can also help us out by taking a look at our [Most Wanted List](Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
+You can also help us out by taking a look at our [Most Wanted List](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/master/docs/Most_wanted_list.csv) of species with missing data. Recognize any names and know where we could find data about their diet or body mass? Please drop us a [line](https://docs.google.com/forms/d/e/1FAIpQLSeo0vEbt7IO6DV0FXLt8wzgXVXEcw2lYHzJeItbA_CiM-PjSw/viewform?usp=sf_link). Species with large ranges and imprecise phylogenetic imputations are ranked highest.
 
 
 ### Help develop the next version of PHYLACINE
