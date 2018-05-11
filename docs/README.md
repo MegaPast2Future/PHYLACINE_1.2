@@ -49,7 +49,7 @@ If you would like to see the latest development version of PHYLACINE or start a 
 <br><br>
 
 ------
-PHYLACINE 1.2 is a product of MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
+PHYLACINE 1.2 is a collaboration between Gothenburg University and MegaPast2Future, a multidisciplinary, international working group housed at Aarhus University in Denmark. If you would like to know more about us, visit our [main page](http://projects.au.dk/mega/). If you are interested in other work we are doing on GitHub, check out our [GitHub site](https://megapast2future.github.io).
 <br><br>
 <br><br>
 
