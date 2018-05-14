@@ -16,7 +16,7 @@ PHYLACINE is a database that features:
 <br><br>
 
 ### Download the data
-To download the latest stable version of PHYLACINE (Version 1.2.0) or to read our detailed metadata, vist our archive on DataDryad **(This link will go live once the manuscript has been published)**.
+To download the latest stable version of PHYLACINE (Version 1.2.0) or to read our detailed metadata, vist our archive on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 <br><br>
 <br><br>
 
