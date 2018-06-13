@@ -21,7 +21,7 @@ PHYLACINE is a database that features:
 ### Download the data
 To download the latest stable version of PHYLACINE (Version 1.2.0) and to read our detailed metadata, vist our archive on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 
-To play around with the latest development version of PHYLACINE, fork our repo or click [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MegaPast2Future/PHYLACINE_1.2/tree/master/Data).
+To play around with the latest development version of PHYLACINE (Also Version 1.2.0 at the moment), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2_Private/raw/ursus_dev/PHYLACINE_1.2.0.zip).
 <br><br>
 <br><br>
 
