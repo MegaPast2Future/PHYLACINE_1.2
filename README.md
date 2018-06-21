@@ -62,6 +62,9 @@ Here are some changes we are planning to make in future versions of PHYLACINE:
 
 #### Changes in taxonomy:
 * _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
+
+#### Changes in traits:
+* Correct mass for _Sinomegaceros ordosianus_
 <br><br>
 <br><br>
 
