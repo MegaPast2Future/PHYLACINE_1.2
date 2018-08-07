@@ -16,12 +16,14 @@ PHYLACINE is a database that features:
 <br><br>
 
 ### Read the article
-To read the original article in _Ecology_ go here: https://doi.org/10.1002/ecy.2443.
+To read the original article in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443).
 <br><br>
 <br><br>
 
 ### Download the data
 To download the archival version of PHYLACINE (Version 1.2.0) or to read our detailed metadata, vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
+
+To see the latest development version of PHYLACINE (Also Version 1.2.0 as we haven't updated anything yet), check out our [GitHub repo](https://github.com/MegaPast2Future/PHYLACINE_1.2).
 <br><br>
 <br><br>
 
@@ -33,6 +35,8 @@ We have some example [code](https://github.com/MegaPast2Future/PHYLACINE_1.2#vig
 ### Cite the data
 To cite PHYLACINE, please use the following:
 >Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+
+Also, please cite the underlying large datasets that were used to make PHYLACINE. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 metadata.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](PHYLACINE_logo_large.png) and a [black and white version](PHYLACINE_logo_large_bw.png) that you may use.
 <br><br>
