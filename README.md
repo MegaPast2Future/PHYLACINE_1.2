@@ -23,7 +23,7 @@ To read the original article in _Ecology_ go here: https://doi.org/10.1002/ecy.2
 
 To download the archival version of PHYLACINE (Version 1.2.0), vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 
-To play around with the latest development version of PHYLACINE (Also Version 1.2.0 as we haven't updated anything yet), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.0/PHYLACINE_1.2.0.zip) to download all the files.
+To play around with the latest development version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files.
 <br><br>
 <br><br>
 
@@ -66,9 +66,6 @@ Here are some changes we are planning to make in future versions of PHYLACINE:
 
 #### Changes in taxonomy:
 * _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
-
-#### Changes in traits:
-* Correct mass for _Sinomegaceros ordosianus_
 <br><br>
 <br><br>
 
