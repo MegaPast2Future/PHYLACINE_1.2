@@ -1,5 +1,3 @@
-
-<!-- README.md is generated from README.Rmd in docs. Please edit that file -->
 ![PHYLACINE](docs/PHYLACINE_logo.png)
 <br><br>
 
@@ -23,14 +21,18 @@ To read the original article in _Ecology_ go here: https://doi.org/10.1002/ecy.2
 
 To download the archival version of PHYLACINE (Version 1.2.0), vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 
-To play around with the latest development version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files.
+To play around with the latest version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files.
 <br><br>
 <br><br>
 
 ### Cite the data
-To cite PHYLACINE, please use the following:
+To cite PHYLACINE, please cite the original and the latest version:
 
-> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+**Original (1.2):**
+> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology. doi:10.1002/ecy.2443
+
+**Latest (1.2.1):**
+> Faurby, S., Pedersen, R. Ø., Davis, M., Schowanek, Jarvie, S., S. D., Antonelli, A., & Svenning, J.C. (2020). PHYLACINE 1.2.1: An update to the Phylogenetic Atlas of Mammal Macroecology. doi:???
 
 Also, please cite the underlying large datasets that were used to make PHYLACINE. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 metadata.
 
