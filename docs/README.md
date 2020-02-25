@@ -40,9 +40,9 @@ To cite PHYLACINE, please cite the original and the latest version:
 > Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology. doi:10.1002/ecy.2443
 
 **Latest (1.2.1):**
-> Faurby, S., Pedersen, R. Ø., Davis, M., Schowanek, Jarvie, S., S. D., Antonelli, A., & Svenning, J.C. (2020). PHYLACINE 1.2.1: An update to the Phylogenetic Atlas of Mammal Macroecology. doi:???
+> Faurby, S., Pedersen, R. Ø., Davis, M., Schowanek, S. D., Jarvie, S., Antonelli, A., & Svenning, J.C. (2020). PHYLACINE 1.2.1: An update to the Phylogenetic Atlas of Mammal Macroecology. doi:???
 
-Also, please cite the underlying large datasets that were used to make PHYLACINE. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 metadata.
+Also, please cite the underlying large datasets that were used to make PHYLACINE. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 and PHYLACINE 1.2.1 metadata.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](PHYLACINE_logo_large.png) and a [black and white version](PHYLACINE_logo_large_bw.png) that you may use.
 <br><br>
