@@ -18,11 +18,11 @@ PHYLACINE is a database that features:
 
 ### Download the data
 To read the original article in _Ecology_ go here: https://doi.org/10.1002/ecy.2443.
+Information on the updated PHYLACINE 1.2.1 is found here: **XXXXX**
+
+To use the latest version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database should be used over the original version.
 
 To download the archival version of PHYLACINE (Version 1.2.0), vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
-
-To play around with the latest version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files.
-<br><br>
 <br><br>
 
 ### Cite the data
