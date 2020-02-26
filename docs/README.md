@@ -21,9 +21,9 @@ To read the original article and metadata in _Ecology_ go [here](https://doi.org
 <br><br>
 
 ### Download the data
-To use the latest version of PHYLACINE (Version 1.2.1), check out our [GitHub repo](https://github.com/MegaPast2Future/PHYLACINE_1.2). This updated version of the PHYLACINE database should be used over the original version.
+To use the latest stable version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database corrects several errors and should be used over the original version.
 
-To download the archival version of PHYLACINE (Version 1.2.0) or to read our detailed metadata, vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
+To download the depreciated archival version of PHYLACINE (Version 1.2.0), or to read our detailed metadata, visit our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 <br><br>
 <br><br>
 
@@ -33,9 +33,9 @@ We have some example [code](https://github.com/MegaPast2Future/PHYLACINE_1.2#vig
 <br><br>
 
 ### Cite the data
-To cite PHYLACINE, please cite the original and the latest version:
+To properly cite the latest stable version of the PHYLACINE database, please cite the original article and the update for the current version:
 
-**Original (1.2):**
+**Original (1.2.0):**
 > Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology. doi:10.1002/ecy.2443
 
 **Latest (1.2.1):**
