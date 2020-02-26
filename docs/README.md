@@ -21,7 +21,7 @@ To read the original article and metadata in _Ecology_ go [here](https://doi.org
 <br><br>
 
 ### Download the data
-To use the latest stable version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database corrects several errors and should be used over the original version.
+To use the latest stable version of PHYLACINE (Version 1.2.1), click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database corrects several errors and should be used over the original version.
 
 <br><br>
 <br><br>
