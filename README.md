@@ -17,7 +17,7 @@ PHYLACINE is a database that features:
 <br><br>
 
 ### Download the data
-To read the original article and metadata in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443). Metadata for updates made to the database in PHYLACINE 1.2.1 can be found [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/v1.2.1/Data/PHYLACINE_1.2.0_Release_notes.pdf)
+To read the original article and metadata in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443). Metadata for updates made to the database in PHYLACINE 1.2.1 can be found [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/v1.2.1/Data/PHYLACINE_1.2.0_Release_notes.pdf).
 
 To use the latest stable version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database corrects several errors and should be used over the original version.
 
