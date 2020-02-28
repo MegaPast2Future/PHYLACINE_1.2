@@ -16,7 +16,7 @@ PHYLACINE is a database that features:
 <br><br>
 
 ### Read the article
-To read the original article and metadata in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443). Metadata for updates made to the database in PHYLACINE 1.2.1 can be found [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/v1.2.1/Data/PHYLACINE_1.2.0_Release_notes.pdf).
+To read the original article and metadata in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443). Metadata for updates made to the database in PHYLACINE 1.2.1 can be found [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/v1.2.1/Data/PHYLACINE_1.2.1_Release_notes.pdf).
 <br><br>
 <br><br>
 
