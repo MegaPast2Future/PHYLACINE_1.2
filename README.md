@@ -1,5 +1,3 @@
-
-<!-- README.md is generated from README.Rmd in docs. Please edit that file -->
 ![PHYLACINE](docs/PHYLACINE_logo.png)
 <br><br>
 
@@ -19,20 +17,23 @@ PHYLACINE is a database that features:
 <br><br>
 
 ### Download the data
-To read the original article in _Ecology_ go here: https://doi.org/10.1002/ecy.2443.
+To read the original article and metadata in _Ecology_ go [here](https://doi.org/10.1002/ecy.2443). Metadata for updates made to the database in PHYLACINE 1.2.1 can be found [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/v1.2.1/Data/PHYLACINE_1.2.0_Release_notes.pdf).
 
-To download the archival version of PHYLACINE (Version 1.2.0), vist our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
+To use the latest stable version of PHYLACINE (Version 1.2.1), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.1/PHYLACINE_1.2.1.zip) to download all the files. This updated version of the PHYLACINE database corrects several errors and should be used over the original version.
 
-To play around with the latest development version of PHYLACINE (Also Version 1.2.0 as we haven't updated anything yet), fork our repo or click [here](https://github.com/MegaPast2Future/PHYLACINE_1.2/releases/download/v1.2.0/PHYLACINE_1.2.0.zip) to download all the files.
-<br><br>
+To download the depreciated archival version of PHYLACINE (Version 1.2.0), visit our page on [DataDryad](https://doi.org/10.5061/dryad.bp26v20).
 <br><br>
 
 ### Cite the data
-To cite PHYLACINE, please use the following:
+To properly cite the latest stable version of the PHYLACINE database, please cite the original article and the update for the current version:
 
-> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology.
+**Original (1.2.0):**
+> Faurby, S., Davis, M., Pedersen, R. Ø., Schowanek, S. D., Antonelli, A., & Svenning, J.C. (2018). PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology. doi:10.1002/ecy.2443
 
-Also, please cite the underlying large datasets that were used to make PHYLACINE. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 metadata.
+**Latest (1.2.1):**
+> Faurby, S., Pedersen, R. Ø., Davis, M., Schowanek, S. D., Jarvie, S., Antonelli, A., & Svenning, J.C. (2020). PHYLACINE 1.2.1: An update to the Phylogenetic Atlas of Mammal Macroecology. doi:10.5281/zenodo.3690867
+
+Also, please cite the underlying large datasets that were used to make the PHYLACINE databases. Details on these datasets and their respective citations can be found in the PHYLACINE 1.2 and PHYLACINE 1.2.1 metadata.
 
 If you would like high resolution copies of the PHYLACINE logo for your presentations, we have both a [colored version](docs/PHYLACINE_logo_large.png) and a [black and white version](docs/PHYLACINE_logo_large_bw.png) that you may use.
 <br><br>
@@ -66,9 +67,6 @@ Here are some changes we are planning to make in future versions of PHYLACINE:
 
 #### Changes in taxonomy:
 * _Glyptotherium floridanum_ -> _Glyptotherium cylindricum_
-
-#### Changes in traits:
-* Correct mass for _Sinomegaceros ordosianus_
 <br><br>
 <br><br>
 
