@@ -1,5 +1,7 @@
 ## **PHYLACINE 2.0 is Coming This Fall!**
 
+Are you new to PHYLACINE visit the [main page here](https://megapast2future.github.io/PHYLACINE_1.2/).
+
 Get ready for the next generation of PHYLACINE, with exciting new updates that expand the dataset and refine its capabilities:
 
 - **Updated Taxonomy**: Incorporating the latest species classifications (IUCN 2020-2).
@@ -12,4 +14,4 @@ Get ready for the next generation of PHYLACINE, with exciting new updates that e
 
 While PHYLACINE 2.0 brings valuable new tools and data for researchers, we are happy to let you know we are already planning version 3.0 - which will introduce even more exciting features, including increased map resolution, historical and future species ranges, and expanded trait data like density and metabolic rates!
 
-![PHYLACINE](docs/PHYLACINE_logo.png)
+![PHYLACINE](PHYLACINE_logo.png)
